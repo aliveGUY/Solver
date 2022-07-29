@@ -1,31 +1,37 @@
-# curriculum-databases-projects-template
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+# Project Name
 
+> In this project we will implement a class with methods, using TDD.
+## Built With
 
-## Getting Started
+- Ruby
+- Rspec
 
-This repository includes files with plain SQL that can be used to recreate a database:
+### Getting Started
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+To get a local copy up and running follow these simple steps:
 
+### Prerequisites
 
-## Authors
+Open your terminal and navigate to the folder you would like to save the project.
 
-👤 **Author1**
+### Setup
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Type these commands into the terminal:
 
-👤 **Author2**
+```
+git clone https://github.com/aliveGUY/Solver.git
+cd Solver
+```
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+### Run tests
+
+Type these commands into the terminal:
+
+```
+rspec spec
+```
 
 ## 🤝 Contributing
 
@@ -39,9 +45,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [Microverse](https://www.microverse.org/) for the motivation.
 
 ## 📝 License
 
