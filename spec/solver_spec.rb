@@ -38,4 +38,10 @@ describe Solver do
       expect(@solver.reverse("hello")).to eql "olleh"
     end
   end
+
+  describe "#fizzbuzz" do
+    it "takes integer" do
+      expect{@solver.fizzbuzz(12)}.not_to raise_error
+    end
+  end
 end
