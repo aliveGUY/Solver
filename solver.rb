@@ -1,5 +1,7 @@
 class Solver
   def factorial(integer)
+
+
     if(integer == 0 )
       return 1
     end

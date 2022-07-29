@@ -23,5 +23,9 @@ describe Solver do
     it 'return 1 if input is 0' do
       expect(@solver.factorial(0)).to eql 1
     end
+
+    it 'raises error if input is below zero' do
+      expect{@solver.factorial(-12)}.to raise_error(RuntimeError)
+    end
   end
 end
