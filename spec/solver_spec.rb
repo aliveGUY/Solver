@@ -28,4 +28,10 @@ describe Solver do
       expect{@solver.factorial(-12)}.to raise_error(RuntimeError)
     end
   end
+
+  describe "#reverse" do
+    it "Takes one argument, a string and returns a string" do
+      expect(@solver.reverse("hello")).to be_instance_of(String)
+    end
+  end
 end
