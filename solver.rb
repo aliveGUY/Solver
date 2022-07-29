@@ -20,6 +20,5 @@ class Solver
   end
 
   def fizzbuzz(integer)
-
   end
 end
