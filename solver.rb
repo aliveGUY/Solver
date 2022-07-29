@@ -1,6 +1,8 @@
 class Solver
   def factorial(integer)
-
+    unless integer >= 0
+      raise 'Wrong input'
+    end
 
     if(integer == 0 )
       return 1
