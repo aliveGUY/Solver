@@ -7,13 +7,13 @@ describe Solver do
 
   describe '#factorial' do
     it 'takes one argument' do
-      expect{@solver.factorial()}.to raise_error(ArgumentError)
-      expect{@solver.factorial(12)}.not_to raise_error
-      expect{@solver.factorial(12, 12)}.to raise_error(ArgumentError)
+      expect { @solver.factorial }.to raise_error(ArgumentError)
+      expect { @solver.factorial(12) }.not_to raise_error
+      expect { @solver.factorial(12, 12) }.to raise_error(ArgumentError)
     end
 
     it 'takes only integer' do
-      expect{@solver.factorial('3')}.to raise_error(ArgumentError)
+      expect { @solver.factorial('3') }.to raise_error(ArgumentError)
     end
 
     it 'returns factorial of input' do
@@ -25,39 +25,38 @@ describe Solver do
     end
 
     it 'raises error if input is below zero' do
-      expect{@solver.factorial(-12)}.to raise_error(RuntimeError)
+      expect { @solver.factorial(-12) }.to raise_error(RuntimeError)
     end
   end
 
-  describe "#reverse" do
-    it "Takes one argument, a string and returns a string" do
-      expect(@solver.reverse("hello")).to be_instance_of(String)
+  describe '#reverse' do
+    it 'Takes one argument, a string and returns a string' do
+      expect(@solver.reverse('hello')).to be_instance_of(String)
     end
-    
-    it "Returns the string reversed" do
-      expect(@solver.reverse("hello")).to eql "olleh"
+
+    it 'Returns the string reversed' do
+      expect(@solver.reverse('hello')).to eql 'olleh'
     end
   end
 
-  describe "#fizzbuzz" do
-    it "takes integer" do
-      expect{@solver.fizzbuzz(12)}.not_to raise_error
+  describe '#fizzbuzz' do
+    it 'takes integer' do
+      expect { @solver.fizzbuzz(12) }.not_to raise_error
     end
 
-    it "When N is divisible by 3, return fizz" do
+    it 'When N is divisible by 3, return fizz' do
       expect(@solver.fizzbuzz(11)).not_to eql 'fizz'
       expect(@solver.fizzbuzz(12)).to eql 'fizz'
     end
 
-    it "When N is divisible by 5, return buzz" do
+    it 'When N is divisible by 5, return buzz' do
       expect(@solver.fizzbuzz(11)).not_to eql 'buzz'
       expect(@solver.fizzbuzz(10)).to eql 'buzz'
     end
 
-    it "When N is divisible by 3 and 5, return fizzbuzz" do
+    it 'When N is divisible by 3 and 5, return fizzbuzz' do
       expect(@solver.fizzbuzz(11)).not_to eql 'fizzbuzz'
       expect(@solver.fizzbuzz(15)).to eql 'fizzbuzz'
     end
-
   end
 end

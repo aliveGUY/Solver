@@ -1,15 +1,11 @@
 class Solver
   def factorial(integer)
-    unless integer >= 0
-      raise 'Wrong input'
-    end
+    raise 'Wrong input' unless integer >= 0
 
-    if(integer == 0 )
-      return 1
-    end
+    return 1 if integer.zero?
 
     res = 1
-    for i in 1..integer
+    (1..integer).each do |i|
       res *= i
     end
     res
@@ -20,17 +16,10 @@ class Solver
   end
 
   def fizzbuzz(integer)
-    if integer%5 == 0 && integer%3 == 0
-      return 'fizzbuzz'
-    end
-    
-    if integer%3 == 0
-      return 'fizz'
-    end
+    return 'fizzbuzz' if (integer % 5).zero? && (integer % 3).zero?
 
-    if integer%5 == 0
-      return 'buzz'
-    end
+    return 'fizz' if (integer % 3).zero?
 
+    'buzz' if (integer % 5).zero?
   end
 end
