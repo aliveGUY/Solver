@@ -14,4 +14,8 @@ class Solver
     end
     res
   end
+
+  def reverse(string)
+    string
+  end
 end
