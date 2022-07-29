@@ -20,5 +20,8 @@ class Solver
   end
 
   def fizzbuzz(integer)
+    if integer%3 == 0
+      return 'fizz'
+    end
   end
 end

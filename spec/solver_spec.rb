@@ -45,8 +45,8 @@ describe Solver do
     end
 
     it "When N is divisible by 3, return fizz" do
-      expect{@solver.fizzbuzz(11)}.not_to eql 'fizz'
-      expect{@solver.fizzbuzz(12)}.to eql 'fizz'
+      expect(@solver.fizzbuzz(11)).not_to eql 'fizz'
+      expect(@solver.fizzbuzz(12)).to eql 'fizz'
     end
 
   end
