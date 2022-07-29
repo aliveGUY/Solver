@@ -13,7 +13,7 @@ describe Solver do
     end
 
     it 'takes only integer' do
-      # expect('3').to eql 6
+      expect{@solver.factorial('3')}.to raise_error(ArgumentError)
     end
 
     it 'returns factorial of input' do
