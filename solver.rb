@@ -18,4 +18,8 @@ class Solver
   def reverse(string)
     string.reverse
   end
+
+  def fizzbuzz(integer)
+
+  end
 end
