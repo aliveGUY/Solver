@@ -33,5 +33,9 @@ describe Solver do
     it "Takes one argument, a string and returns a string" do
       expect(@solver.reverse("hello")).to be_instance_of(String)
     end
+    
+    it "Returns the string reversed" do
+      expect(@solver.reverse("hello")).to eql "olleh"
+    end
   end
 end
