@@ -24,5 +24,8 @@ class Solver
       return 'fizz'
     end
 
+    if integer%5 == 0
+      return 'buzz'
+    end
   end
 end

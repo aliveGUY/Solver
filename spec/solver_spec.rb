@@ -51,7 +51,7 @@ describe Solver do
 
     it "When N is divisible by 5, return buzz" do
       expect(@solver.fizzbuzz(11)).not_to eql 'buzz'
-      expect(@solver.fizzbuzz(10)).to eql 'nuzz'
+      expect(@solver.fizzbuzz(10)).to eql 'buzz'
     end
 
   end
