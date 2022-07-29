@@ -20,6 +20,10 @@ class Solver
   end
 
   def fizzbuzz(integer)
+    if integer%5 == 0 && integer%3 == 0
+      return 'fizzbuzz'
+    end
+    
     if integer%3 == 0
       return 'fizz'
     end
@@ -27,5 +31,6 @@ class Solver
     if integer%5 == 0
       return 'buzz'
     end
+
   end
 end
