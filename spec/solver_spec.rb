@@ -14,7 +14,7 @@ describe Solver do
 
 
     it 'returns factorial of input' do
-      
+      expect(@solver.factorial(3)).to eql 6
     end
   end
 end
