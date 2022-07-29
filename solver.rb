@@ -23,5 +23,6 @@ class Solver
     if integer%3 == 0
       return 'fizz'
     end
+
   end
 end
